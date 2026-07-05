@@ -1,0 +1,8 @@
+name = "wechat-cleaner-check"
+main = "src/worker.js"
+compatibility_date = "2026-07-04"
+
+[[d1_databases]]
+binding = "cleaner_check_db"
+database_name = "cleaner_check_db"
+database_id = "你的 database id"
