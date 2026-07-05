@@ -1,8 +1,13 @@
 name = "wechat-cleaner-check"
 main = "src/worker.js"
 compatibility_date = "2026-07-04"
+workers_dev = true
+
+routes = [
+  { pattern = "check.wegpt.top", zone_name = "wegpt.top", custom_domain = true }
+]
 
 [[d1_databases]]
 binding = "cleaner_check_db"
 database_name = "cleaner_check_db"
-database_id = "你的 database id"
+database_id = "e51e09d5-ac8e-4439-81be-c2a867d9c76c"

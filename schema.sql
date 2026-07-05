@@ -18,3 +18,12 @@ CREATE INDEX IF NOT EXISTS idx_inspection_records_server_submitted_at
 
 CREATE INDEX IF NOT EXISTS idx_inspection_records_record_date
   ON inspection_records(record_date);
+
+CREATE INDEX IF NOT EXISTS idx_inspection_records_machine_id
+  ON inspection_records(machine_id);
+
+CREATE TABLE IF NOT EXISTS app_settings (
+  key TEXT PRIMARY KEY,
+  value TEXT NOT NULL,
+  updated_at TEXT NOT NULL
+);
